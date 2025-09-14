@@ -1,0 +1,143 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and font */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f3ecdc;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Main container */
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Left side form section */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 480px;
+    align-items: flex-start; /* Keep everything left-aligned */
+}
+
+/* Title styling */
+.contact-left-title {
+    width: 100%;
+    text-align: center; /* Center the title & underline */
+}
+
+.contact-left-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #940404;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    width: 100%;
+    max-width: 450px;
+    height: 5px;
+    border: none;
+    background: #ff1818;
+    border-radius: 10px;
+    margin: 10px auto 20px auto; /* Auto centers underline */
+}
+
+/* Inputs & textarea */
+.contact-inputs {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea.contact-inputs {
+    height: 140px;
+    border-radius: 20px;
+    resize: none;
+    padding: 15px;
+}
+
+/* Multiple select styling */
+select[multiple] {
+    min-height: 120px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Input focus effect */
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+/* Placeholder color */
+.contact-inputs::placeholder {
+    color: #aaa;
+}
+
+/* Submit button */
+.contact-left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #e50000, #530000);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-left button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+/* Right side image */
+.contact-right img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-left {
+        align-items: center;
+    }
+
+    .contact-inputs {
+        max-width: 100%;
+    }
+
+    .contact-right {
+        margin-top: 20px;
+    }
+}
