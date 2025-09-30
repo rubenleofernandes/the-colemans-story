@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coleman's Story</title>
+    <link rel="stylesheet" href="styletcs.css">
+</head>
+<body>
+
+    <!-- Left Side -->
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>THE COLEMAN'S STORY </h2>
+                <h4>Ruben Leonard Fernandes</h4>
+                <hr>
+                <h3>
+                    Kindly fill the feedback form.<br>
+                    Also, rate the book on a scale of 1 to 10.
+                </h3>
+            </div>
+
+            <!-- Hidden Key -->
+            <input type="hidden" name="access_key" value="22386d0e-38db-48a2-b688-e91220fb44bf">
+
+            <!-- Name & Email -->
+            <input type="text" name="Reader's name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="Reader's email" placeholder="Your email (optional)" class="contact-inputs">
+
+            <!-- Usually Reading - Checkboxes -->
+            <label><b>What Genre do you usually read?</b></label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Fiction"> Fiction</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Non-Fiction"> Non-Fiction</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Narrative"> Narrative</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Mystery"> Mystery</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Romance"> Romance</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Fantasy"> Fantasy</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Horror"> Horror</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Thriller"> Thriller</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Self-Help"> Self-Help</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Poetry"> Poetry</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Crime"> Crime</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Adventure"> Adventure</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="History">History</label>
+                <label><input type="checkbox" name="What Genre does this reader usually read?" value="Action"> Action</label>
+            </div>
+
+            <!-- Stands Out - Checkboxes -->
+            <label><b>What stands out in this book?</b></label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="What stands out in this book?" value="Detailing"> Detailing</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Planning"> Planning</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Pace"> Pace</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Grip"> Grip</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Stability"> Stability</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Storytelling"> Storytelling</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Cinematography"> Cinematography</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Psychological"> Psychological</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Mystery"> Mystery</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Suspense"> Suspense</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Twists"> Twists</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Thriller"> Thriller</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Adventure"> Adventure</label>
+                <label><input type="checkbox" name="What stands out in this book?" value="Investigation"> Investigation</label>
+            </div>
+
+            <!-- Book Rating -->
+            <label for="book"><b>Rate the Book (1-10):</b></label>
+            <select name="Reader's book rating" id="Reader's book rating" class="contact-inputs" required>
+                <option value="">-- Select --</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Average</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10 - Excellent</option>
+            </select>
+
+            <!-- Found About Book -->
+            <label for="Where did the reader find or hear about this book?"><b>Where did you find or hear about this book?</b></label>
+            <select name="Where did you reader or hear about this book?" id="Where did the reader find or hear about this book?" class="contact-inputs" required>
+                <option value="">-- Select --</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Ziffy Bees">Ziffy Bees</option>
+                <option value="Amazon">Amazon</option>
+                <option value="Flipkart">Flipkart</option>
+                <option value="Friend">Friend</option>
+                <option value="Clever Fox">Clever Fox</option>
+                <option value="Github">Github</option>
+                <option value="Linkedin">Linkedin</option>
+                <option value="Family">Family</option>
+                <option value="University">University</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <!-- Feedback Text -->
+            <h3>Kindly share your views about the book in 30 words or less:</h3>
+            <textarea name="Reader's statement about the book" placeholder="Your feedback" class="contact-inputs" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">
+                Submit <img src="arrow-icon--myiconfinder-23.png" width="20" height="20" alt="">
+            </button>
+
+            <h4>Thank You!</h4>
+        </form>
+
+        <!-- Right Side (Image) -->
+        <div class="contact-right">
+            <img src="TCS_main_cover.png" alt="Book Cover">
+        </div>
+    </div>
+</body>
+</html>
